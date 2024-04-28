@@ -139,6 +139,15 @@ else {console.log("El numero ingresado es menor, Vuelve a Intentarlo")
 
 console.log("-------Ejercicio 9-------")
 
+let edadUsuario = parseInt(prompt("Ingrese su Edad"))
+
+if ((edadUsuario >= 0) && (edadUsuario < 13)) {console.log("Eres un Infante")}
+else if ((edadUsuario >= 13) && (edadUsuario < 19)) {console.log("Eres un Adolescente")
+    }
+    else if ((edadUsuario >= 19) && (edadUsuario < 46)) {console.log("Eres un Mayor Joven")}
+    else if ((edadUsuario >= 45) && (edadUsuario <= 100)) {console.log("Eres un Anciano")}
+    else{console.log("Realmente tiene usted la edad ingresada");}
+    
 
 
 
@@ -221,3 +230,7 @@ switch (tipoOperacion) {
     default:
         break;
 }
+
+
+console.log("-------Ejercicio 13-------")
+
