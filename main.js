@@ -13,7 +13,7 @@ console.log("-------Ejercicio 2-------")
 let diaNacimientoHija = 19
 let numeroFavorito = 19
 
-if (numeroFavorito == diaNacimientoHija) {
+if (numeroFavorito === diaNacimientoHija) {
     console.log("Son Iguales")
 } else { console.log("Son Diferentes") }
 
@@ -40,7 +40,7 @@ let Santiago = 44
 
 if (Luis < David && Luis < Santiago) { console.log("Luis es el menor") }
 else if (David < Luis && David < Santiago) { console.log("David es el menor") }
-else if (David == Santiago && David == Luis) { console.log("Los tres amigos son de la misma edad") }
+else if (David === Santiago && David === Luis) { console.log("Los tres amigos son de la misma edad") }
 else { console.log("Santiago es el menor") }
 
 
@@ -91,7 +91,7 @@ let poseePase = prompt("Posee Pase Ingrese vip o normal (solo minusculas)")
 let poseeEntrada = prompt("Posee usted entrada Ingrese si o no (solo minusculas)")
 
 
-if ((miNombre == nombreCliente) || (poseePase == "vip")) {
+if ((miNombre === nombreCliente) || (poseePase === "vip")) {
     console.log("Sea usted Bienvenido ADELANTE")
 }
 else if (poseeEntrada === "si") {
@@ -105,8 +105,8 @@ else {
     if (deseaComprarEntrada === "si") {
         let dineroDisponible = parseInt(prompt("Ingrese dinero disponible para comprar"))
         if (dineroDisponible >= 1000) { console.log("Sea usted Bienvenido ADELANTE") }
-        else { console.log("Compra Rechazada. Intente otro medio de pago"); }
-    } else{console.log("De Acuerdo, Que tenga un lindo día. HASTA LUEGO");}
+        else { console.log("Compra Rechazada. Intente otro medio de pago") }
+    } else{console.log("De Acuerdo, Que tenga un lindo día. HASTA LUEGO")}
     }
 
 
@@ -194,7 +194,7 @@ switch (color) {
         console.log("El Color de la Tierra")
         break
     default:
-        console.log("Excelente elección, no lo teniamos pensado");
+        console.log("Excelente elección, no lo teniamos pensado")
         break
 }
 
@@ -218,7 +218,7 @@ switch (tipoOperacion) {
 
     case "multiplicacion":
         let mult = numero1 + numero2
-        console.log("El resultado de la multiplicacion es " + mult);
+        console.log("El resultado de la multiplicacion es " + mult)
         break
 
     case "division":
