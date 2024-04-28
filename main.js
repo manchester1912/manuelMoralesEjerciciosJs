@@ -73,14 +73,14 @@ if (persona1.edad > persona2.edad) {
 
 console.log("-------Ejercicio 6-------")
 
-// let nombre = prompt("Ingrese su Nombre")
-// let edad = parseInt(prompt("Ingrese su Edad"))
-// let altura = parseInt(prompt("Ingrese su Estatura en centimetros (solo numeros"))
-// let vision = parseInt(prompt("Ingrese grado de vison numero del 1 al 10"))
+let nombre = prompt("Ingrese su Nombre")
+let edad = parseInt(prompt("Ingrese su Edad"))
+let altura = parseInt(prompt("Ingrese su Estatura en centimetros (solo numeros"))
+let vision = parseInt(prompt("Ingrese grado de vison numero del 1 al 10"))
 
-// if ((edad > 18) && (altura > 150) && ((vision >= 8) && (vision <=10))) {
-//     console.log("Esta usted capacitado para conducir")}
-//     else{console.log("Usted no cumple los requisitos minimos para obtener su licencia");}
+if ((edad > 18) && (altura > 150) && ((vision >= 8) && (vision <=10))) {
+    console.log("Esta usted capacitado para conducir")}
+    else{console.log("Usted no cumple los requisitos minimos para obtener su licencia");}
 
 
 console.log("-------Ejercicio 7-------")
@@ -88,18 +88,136 @@ console.log("-------Ejercicio 7-------")
 let miNombre = "manuel"
 let nombreCliente = prompt("Ingrese su Nombre (solo minusculas)")
 let poseePase = prompt("Posee Pase Ingrese vip o normal (solo minusculas)")
-// let poseeEntrada = prompt("Posee Entrada Ingrese si o no (solo minusculas)")
-// let utilizaEntrada = prompt("Desea usar su Entrada Ingrese si o no (solo minusculas)")
+let poseeEntrada = prompt("Posee usted entrada Ingrese si o no (solo minusculas)")
+
 
 if ((miNombre == nombreCliente) || (poseePase == "vip")) {
     console.log("Sea usted Bienvenido ADELANTE")
 }
-else if (let poseeEntrada == "si"){let utilizaEntrada = prompt("Desea usar su Entrada Ingrese si o no (solo minusculas)")}
-if (utilizaEntrada == "si") {console.log("Sea usted Bienvenido ADELANTE")}
-    
-else{console.log("ADIOS")}
-    
+else if (poseeEntrada === "si") {
+    let deseaUtilizarla = prompt("Desea Utilizar su Entrada")
+    if (deseaUtilizarla === "si") { console.log("Sea usted Bienvenido ADELANTE") }
+    else {console.log("De Acuerdo, Que tenga un lindo día. HASTA LUEGO");}
+}
+
+else {
+    let deseaComprarEntrada = prompt("Desea comprar una entrada si o no (solo minusculas)")
+    if (deseaComprarEntrada === "si") {
+        let dineroDisponible = parseInt(prompt("Ingrese dinero disponible para comprar"))
+        if (dineroDisponible >= 1000) { console.log("Sea usted Bienvenido ADELANTE") }
+        else { console.log("Compra Rechazada. Intente otro medio de pago"); }
+    } else{console.log("De Acuerdo, Que tenga un lindo día. HASTA LUEGO");}
+    }
+
+
+console.log("-------Ejercicio 8-------")
+
+
+let numeroIncognita = 6
+
+let numeroIngresado = parseInt(prompt("Ingrese un numero del 1 al 10"))
+
+if (numeroIngresado === numeroIncognita) {console.log("Ganaste haz adivinado el Numero")}
+else if (numeroIngresado > numeroIncognita) {console.log("El numero ingresado es mayor, Vuelve a Intentarlo")}
+else {console.log("El numero ingresado es menor, Vuelve a Intentarlo")   
+}
+
+numeroIngresado = parseInt(prompt("Ingrese un numero del 1 al 10"))
+
+if (numeroIngresado === numeroIncognita) {console.log("Ganaste haz adivinado el Numero")}
+else if (numeroIngresado > numeroIncognita) {console.log("El numero ingresado es mayor, Vuelve a Intentarlo")}
+else {console.log("El numero ingresado es menor, Vuelve a Intentarlo")   
+}    
+
+numeroIngresado = parseInt(prompt("Ingrese un numero del 1 al 10"))
+
+if (numeroIngresado === numeroIncognita) {console.log("Ganaste haz adivinado el Numero")}
+else if (numeroIngresado > numeroIncognita) {console.log("El numero ingresado es mayor, Vuelve a Intentarlo")}
+else {console.log("El numero ingresado es menor, Vuelve a Intentarlo")     
+}    
+
+
+console.log("-------Ejercicio 9-------")
 
 
 
 
+console.log("-------Ejercicio 10-------")
+
+let primerJugador = prompt("Ingrese en minuscula una de las siguientes opciones (piedra papel o tijera")
+let segundoJugador = prompt("Ingrese en minuscula una de las siguientes opciones (piedra papel o tijera")
+
+if (primerJugador === segundoJugador) {console.log("Han Empatado")}
+else if ((primerJugador === "papel" && segundoJugador === "piedra") || (primerJugador === "piedra" && segundoJugador === "tijera") || (primerJugador === "tijera" && segundoJugador === "papel")) {console.log("Ha ganado Primer Jugador")}
+
+else if ((segundoJugador === "papel" && primerJugador === "piedra") || (segundoJugador === "piedra" && primerJugador === "tijera") || (segundoJugador === "tijera" && primerJugador === "papel")) {console.log("Ha ganado Segundo Jugador")}
+
+else{console.log("Uno de los jugadores hizo trampa")}
+
+
+console.log("-------Ejercicio 11-------")
+
+let color = prompt("Ingrese un Color (texto en minuscula")
+
+switch (color) {
+    case "blanco":
+    case "negro":
+        console.log("Falta de Color")
+        break
+
+    case "verde":
+        console.log("El Color de la Naturaleza")
+        break
+
+    case "azul":
+        console.log("El Color del Agua")
+        break
+
+    case "amarillo":
+        console.log("El Color del Sol")
+        break
+
+    case "rojo":
+        console.log("El Color del Fuego")
+        break
+
+    case "marron":
+        console.log("El Color de la Tierra")
+        break
+    default:
+        console.log("Excelente elección, no lo teniamos pensado");
+        break
+}
+
+
+console.log("-------Ejercicio 12-------")
+
+let numero1 = parseInt(prompt("Ingrese un Numero"))
+let numero2 = parseInt(prompt("Ingrese un Numero"))
+let tipoOperacion = prompt("Ingrese Tipo de Operacion en minuscula (suma resta multiplicacion o division")
+
+switch (tipoOperacion) {
+    case "suma":
+        let suma = numero1 + numero2
+        console.log("El resultado de la suma es " + suma)
+        break
+
+    case "resta":
+        let resta = numero1 - numero2
+        console.log("El resultado de la resta es " + resta)
+        break
+
+    case "multiplicacion":
+        let mult = numero1 + numero2
+        console.log("El resultado de la multiplicacion es " + mult);
+        break
+
+    case "division":
+        let div = numero1 / numero2
+        if (numero2 === 0) { console.log("No es posible efectuar la operacion. Divisor no puede ser cero") }
+        else { console.log("El resultado de la division es " + div) }
+        break
+
+    default:
+        break;
+}
