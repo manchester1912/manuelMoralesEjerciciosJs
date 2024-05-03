@@ -12,43 +12,35 @@ console.log("--- Ejercicio 1 ---")
 
 console.log("--- Ejercicio 2 ---")
 
-
-// let contador = 0
 // let acumulado = 0
 
-// while (contador < 10) {
-//   numero2 = parseInt(prompt("Ingrese un Numero del 0 al 9. Tiene diez chances"))
-//   acumulado = acumulado + numero2
-//   console.log("El Acumulado es " + acumulado)
-//   contador++
-//   console.log("Usted ha usado el chance " + contador + " de 10 disponibles" )
+// do {
+// numero2 = parseInt(prompt("Ingrese un Numero del 0 al 9"))
+// acumulado = acumulado + numero2
 
-//   if (numero2 === 0) {
-//     console.log("Usted ha ingresado cero, el programa se detiene")
-//     break
-//   }
-// }
+// }while (numero2 !== 0);
+
+// console.log("Total Acumulado " + acumulado)
+// console.log("Usted ingreso cero, el programa se detiene")
+
 
 
 console.log("--- Ejercicio 3 ---")
 
 // let numeroIncognita = 19
+// let numeroIngresado = 0
+// let contador = 0
 
-// let contador = 1
+// do {
+//     numeroIngresado = parseInt(prompt("Ingrese un numero del 1 al 100"))
+//     if (numeroIngresado > numeroIncognita) {console.log("Usted ha ingresado un numero mayor, Intentelo de Nuevo")}
+//     else{console.log("Usted ha ingresado un numero menor, Intentelo de Nuevo")}
 
-// while (contador <= 100) {
-//   let numeroIngresado = parseInt(prompt("Ingrese un numero del 1 al 100"))
-//   if (numeroIngresado === numeroIncognita) {console.log("Felicitaciones, haz adivinado en el intento " + contador)
-//      alert("FELICITACIONES !! Lograste adivinar en el intento " + contador)
-//     break
+//     contador++
+                
+// } while (numeroIngresado != numeroIncognita)
 
-//   }else if (numeroIngresado > numeroIncognita) {console.log("Haz Ingresado un numero Mayor, Vuelve a intentarlo")
-//   alert("Haz Ingresado un numero Mayor, Vuelve a intentarlo")
-//       } else {console.log("Haz ingresado un numero Menor, Vuelve a Intentarlo")
-//     alert("Haz Ingresado un numero Menor, Vuelve a intentarlo")
-//     }
-//    contador ++
-// }
+//    console.log("FELICITACIONES!! Haz Adivinado el Número Incognita en " + contador + " Intentos")
 
 
 console.log("--- Ejercicio 4 ---")
@@ -81,12 +73,151 @@ console.log("--- Ejercicio 5 ---")
 
 console.log("--- Ejercicio 6 ---")
 
+// let equiposFutbol = ["Manchester United", "CA Boca Juniors", "Estudiantes de Mérida FC", "Atletico Nacional de Medellin", "Barcelona FC", "Inter Milan", "Bayern Munich", "Ajax", "AFA", "FVF"]
+
+// for (let index = 0; index < equiposFutbol.length; index++) {
+//     console.log(equiposFutbol[index])    
+// }
+
+
+console.log("--- Ejercicio 7 ---")
+
+// let numero7 = []
+// numero7[0] = parseInt(prompt("Ingrese un Numero"))
+// numero7[1] = parseInt(prompt("Ingrese un Numero"))
+// numero7[2] = parseInt(prompt("Ingrese un Numero"))
+// numero7[3] = parseInt(prompt("Ingrese un Numero"))
+// numero7[4] = parseInt(prompt("Ingrese un Numero"))
+// numero7[5] = parseInt(prompt("Ingrese un Numero"))
+// numero7[6] = parseInt(prompt("Ingrese un Numero"))
+// numero7[7] = parseInt(prompt("Ingrese un Numero"))
+// numero7[8] = parseInt(prompt("Ingrese un Numero"))
+// numero7[9] = parseInt(prompt("Ingrese un Numero"))
+
+// for (let index = 0; index < numero7.length; index++) {
+//     numeroDuplicado = numero7[index] * 2
+//     console.log(numeroDuplicado)    
+// }
+
+
+console.log("--- Ejercicio 8 ---")
+
+let grupoFamiliar = [
+    {nombre : "Manuel", edad : 45, ocupacion : "Contador", trabaja : true, generoMusica : "Rock"},
+    {nombre : "Sharon", edad : 52, ocupacion : "Enfermera", trabaja : true, generoMusica : "Salsa"},
+    {nombre : "Shantal", edad : 18, ocupacion : "Estudiante", trabaja : true, generoMusica : "Pop - Rock"},
+    {nombre : "Luis Manuel", edad : 13, ocupacion : "Estudiante", trabaja : false, generoMusica : "Hip Hop"},
+    {nombre : "Rocky", edad : 2, ocupacion : "Mascota", trabaja : false, generoMusica : "No Aplica"}
+]
+
+for (let index = 0; index < grupoFamiliar.length; index++) {
+ 
+  console.log("Presentamos a") 
+
+  console.log(grupoFamiliar[index])
+    }
+
+
+console.log("--- Ejercicio 9 ---")
+   
+let buscarImpar = [10, 21, 32, 48, 51, 58, 67, 74, 88, 91]
+
+for (let index = 0; index < buscarImpar.length; index++) {
+  let numeroImpar = buscarImpar[index] % 2
+if (numeroImpar !== 0) {console.log(buscarImpar[index] + " Es Impar")
+  }
+  }
+
+
+console.log("--- Ejercicio 10 ---") 
+// let numeros10 = []
+// let index1 = 0
+// let determinarPar
+
+// for (let index = 0; index < 4; index++) {
+//   numeros10[index1] = parseInt(prompt("ingrese"))
+//   index1++
+//   console.log(numeros10)
+//   determinarPar = numeros10[index1] % 2
+// console.log(determinarPar)
+  
+//   }
+
+
+console.log("--- Ejercicio 11 ---") 
+
+let numeros11 = [87, 36, 48, 25, 39, 63, 31, 52, 30, 23]                       
+
+console.log("El numero mas grande del array es " + Math.max.apply(null, numeros11))
+
+
+console.log("--- Ejercicio 12 ---") 
+
+let numeros12 = [87, 36, 48, 25, 39, 63, 31, 52, 30, 23]                       
+
+console.log("El numero mas chico del array es " + Math.min.apply(null, numeros11))
+
+
+console.log("--- Ejercicio 13 ---") 
+
+// let jugador11 = prompt("Jugador 11 Ingrese su Nombre")
+// let jugador21 = prompt("Jugador 21 Ingrese su Nombre")
+
+// console.log("JUGADOR 11: " + jugador11)
+// console.log("JUGADOR 21: " + jugador21)
+
+// let jugadaJugador11 = prompt("Ingrese piedra papel o tijera")
+// let jugadaJugador21 = prompt("Ingrese piedra papel o tijera")
+
+// if ((jugadaJugador1 === "piedra" && jugadaJugador2 === "tijera") || (jugadaJugador1 === "papel" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "tijera" && jugadaJugador2 === "papel") ) {console.log(jugador1 + " GANA")
+  
+// }else if ((jugadaJugador1 === "tijera" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "piedra" && jugadaJugador2 === "papel") || (jugadaJugador1 === "papel" && jugadaJugador2 === "tijera")) {console.log(jugador2 +" GANA")
+  
+// }
+// else{console.log(jugador1 + " y " + jugador2 + " ustedes han empatado, ingresen de nuevo su jugada")}
+
+console.log("-------------------")
+
+
+let jugador1 = prompt("Jugador 1 Ingresa tu Nombre")
+let jugador2 = prompt("Jugador 2 Ingresa tu Nombre")
+
+console.log("JUGADOR 1: " + jugador1)
+console.log("JUGADOR 2: " + jugador2)
+
+let jugadaJugador1
+let jugadaJugador2
+
+do {
+jugadaJugador1 = prompt(jugador1 + " Ingresa piedra papel o tijera")
+jugadaJugador2 = prompt(jugador2 + " Ingresa piedra papel o tijera")
+
+if (jugadaJugador1 === jugadaJugador2) {alert(jugador1 + " y " + jugador2 + " ustedes han empatado, ingresen de nuevo su jugada")}
+   
+} while (jugadaJugador1 === jugadaJugador2)
+
+  if ((jugadaJugador1 === "piedra" && jugadaJugador2 === "tijera") || (jugadaJugador1 === "papel" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "tijera" && jugadaJugador2 === "papel") ) {console.log("FELICIDADSES!! " + jugador1 + " Haz GANADO")}
+  else if ((jugadaJugador1 === "tijera" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "piedra" && jugadaJugador2 === "papel") || (jugadaJugador1 === "papel" && jugadaJugador2 === "tijera")) {console.log("FELICIDADSES!! " + jugador2 + " Haz GANADO")
+  }
 
 
 
 
 
 
+console.log("--- Ejercicio 14 ---") 
+
+let asterisco = "   "
+
+for (let index = 0; index <= 4; index++) {
+
+asterisco+= "*   "
+
+console.log(asterisco)
+  }
+
+
+  console.log("--- Ejercicio 15 ---") 
 
 
 
