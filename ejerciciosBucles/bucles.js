@@ -130,18 +130,26 @@ if (numeroImpar !== 0) {console.log(buscarImpar[index] + " Es Impar")
 
 
 console.log("--- Ejercicio 10 ---") 
-// let numeros10 = []
-// let index1 = 0
-// let determinarPar
+let numero10 = 0
+let acumuladoPar = 0
+let acumuladoImpar = 0
 
-// for (let index = 0; index < 4; index++) {
-//   numeros10[index1] = parseInt(prompt("ingrese"))
-//   index1++
-//   console.log(numeros10)
-//   determinarPar = numeros10[index1] % 2
-// console.log(determinarPar)
+do {
+
+numero10 = parseInt(prompt("Ingrese un Numero"))
+if (numero10 % 2 === 0) {acumuladoPar = acumuladoPar + numero10
+}else if(numero10 % 2 !== 0) {acumuladoImpar = acumuladoImpar + numero10
+}
   
-//   }
+} while (numero10 !== 0)
+
+if (numero10 % 2 === 0) {acumuladoPar = acumuladoPar + numero10
+}else if(numero10 % 2 !== 0) {acumuladoImpar = acumuladoImpar + numero10
+}
+
+
+console.log("La suma total de numeros Pares es : " + acumuladoPar)
+console.log("La suma total de numeros Impares es : " + acumuladoImpar)
 
 
 console.log("--- Ejercicio 11 ---") 
@@ -197,17 +205,15 @@ console.log(asterisco)
 
 console.log("--- Ejercicio 15 ---") 
 
-let asterisco1 = [
-  {asterisco : "   *   *   *   *   *   "},
-  {asterisco : "   *   *   *   *    "},
-  {asterisco : "   *   *   *    "},
-  {asterisco : "   *   *     "},
-  {asterisco : "   *   "}
-]
+// let asterisco1 = [
+//   {asterisco : "   *   *   *   *   *   "},
+//   {asterisco : "   *   *   *   *    "},
+//   {asterisco : "   *   *   *    "},
+//   {asterisco : "   *   *     "},
+//   {asterisco : "   *   "}
+// ]
 
-for (let index = 0; index < asterisco1.length; index++) {
+// for (let index = 0; index < asterisco1.length; index++) {
 
-console.log(asterisco1[index].asterisco)
-
-
-  }
+// console.log(asterisco1[index].asterisco)
+// }
