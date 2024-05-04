@@ -103,18 +103,18 @@ console.log("--- Ejercicio 7 ---")
 console.log("--- Ejercicio 8 ---")
 
 let grupoFamiliar = [
-    {nombre : "Manuel", edad : 45, ocupacion : "Contador", trabaja : true, generoMusica : "Rock"},
-    {nombre : "Sharon", edad : 52, ocupacion : "Enfermera", trabaja : true, generoMusica : "Salsa"},
-    {nombre : "Shantal", edad : 18, ocupacion : "Estudiante", trabaja : true, generoMusica : "Pop - Rock"},
-    {nombre : "Luis Manuel", edad : 13, ocupacion : "Estudiante", trabaja : false, generoMusica : "Hip Hop"},
-    {nombre : "Rocky", edad : 2, ocupacion : "Mascota", trabaja : false, generoMusica : "No Aplica"}
+    {nombre : "Manuel", edad : 45, parentesco : "El Padre", trabaja : true, generoMusica : "Rock"},
+    {nombre : "Sharon", edad : 52, parentesco : "La Madre", trabaja : true, generoMusica : "Salsa"},
+    {nombre : "Shantal", edad : 18, parentesco : "La Hija Mayor", trabaja : true, generoMusica : "Pop - Rock"},
+    {nombre : "Luis Manuel", edad : 13, parentesco : "El Hijo Menor", trabaja : false, generoMusica : "Hip Hop"},
+    {nombre : "Rocky", edad : 2, parentesco : "La Mascota", trabaja : false, generoMusica : "lo que escuchan los demas"}
 ]
 
 for (let index = 0; index < grupoFamiliar.length; index++) {
  
-  console.log("Presentamos a") 
+  console.log("Presentamos a " + grupoFamiliar[index].nombre + " tiene " + grupoFamiliar[index].edad + " años de edad es " + grupoFamiliar[index].parentesco + " y le gusta escuchar " + grupoFamiliar[index].generoMusica)
 
-  console.log(grupoFamiliar[index])
+
     }
 
 
@@ -158,51 +158,29 @@ let numeros12 = [87, 36, 48, 25, 39, 63, 31, 52, 30, 23]
 console.log("El numero mas chico del array es " + Math.min.apply(null, numeros11))
 
 
-console.log("--- Ejercicio 13 ---") 
-
-// let jugador11 = prompt("Jugador 11 Ingrese su Nombre")
-// let jugador21 = prompt("Jugador 21 Ingrese su Nombre")
-
-// console.log("JUGADOR 11: " + jugador11)
-// console.log("JUGADOR 21: " + jugador21)
-
-// let jugadaJugador11 = prompt("Ingrese piedra papel o tijera")
-// let jugadaJugador21 = prompt("Ingrese piedra papel o tijera")
-
-// if ((jugadaJugador1 === "piedra" && jugadaJugador2 === "tijera") || (jugadaJugador1 === "papel" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "tijera" && jugadaJugador2 === "papel") ) {console.log(jugador1 + " GANA")
-  
-// }else if ((jugadaJugador1 === "tijera" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "piedra" && jugadaJugador2 === "papel") || (jugadaJugador1 === "papel" && jugadaJugador2 === "tijera")) {console.log(jugador2 +" GANA")
-  
-// }
-// else{console.log(jugador1 + " y " + jugador2 + " ustedes han empatado, ingresen de nuevo su jugada")}
-
-console.log("-------------------")
+console.log("--- Ejercicio 13 ---")
 
 
-let jugador1 = prompt("Jugador 1 Ingresa tu Nombre")
-let jugador2 = prompt("Jugador 2 Ingresa tu Nombre")
+// let jugador1 = prompt("Jugador 1 Ingresa tu Nombre")
+// let jugador2 = prompt("Jugador 2 Ingresa tu Nombre")
 
-console.log("JUGADOR 1: " + jugador1)
-console.log("JUGADOR 2: " + jugador2)
+// console.log("JUGADOR 1: " + jugador1)
+// console.log("JUGADOR 2: " + jugador2)
 
-let jugadaJugador1
-let jugadaJugador2
+// let jugadaJugador1
+// let jugadaJugador2
 
-do {
-jugadaJugador1 = prompt(jugador1 + " Ingresa piedra papel o tijera")
-jugadaJugador2 = prompt(jugador2 + " Ingresa piedra papel o tijera")
+// do {
+// jugadaJugador1 = prompt(jugador1 + " Ingresa piedra papel o tijera")
+// jugadaJugador2 = prompt(jugador2 + " Ingresa piedra papel o tijera")
 
-if (jugadaJugador1 === jugadaJugador2) {alert(jugador1 + " y " + jugador2 + " ustedes han empatado, ingresen de nuevo su jugada")}
+// if (jugadaJugador1 === jugadaJugador2) {alert(jugador1 + " y " + jugador2 + " ustedes han empatado, ingresen de nuevo su jugada")}
    
-} while (jugadaJugador1 === jugadaJugador2)
+// } while (jugadaJugador1 === jugadaJugador2)
 
-  if ((jugadaJugador1 === "piedra" && jugadaJugador2 === "tijera") || (jugadaJugador1 === "papel" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "tijera" && jugadaJugador2 === "papel") ) {console.log("FELICIDADSES!! " + jugador1 + " Haz GANADO")}
-  else if ((jugadaJugador1 === "tijera" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "piedra" && jugadaJugador2 === "papel") || (jugadaJugador1 === "papel" && jugadaJugador2 === "tijera")) {console.log("FELICIDADSES!! " + jugador2 + " Haz GANADO")
-  }
-
-
-
-
+//   if ((jugadaJugador1 === "piedra" && jugadaJugador2 === "tijera") || (jugadaJugador1 === "papel" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "tijera" && jugadaJugador2 === "papel") ) {console.log("FELICIDADSES!! " + jugador1 + " Haz GANADO")}
+//   else if ((jugadaJugador1 === "tijera" && jugadaJugador2 === "piedra") || (jugadaJugador1 === "piedra" && jugadaJugador2 === "papel") || (jugadaJugador1 === "papel" && jugadaJugador2 === "tijera")) {console.log("FELICIDADSES!! " + jugador2 + " Haz GANADO")
+//   }
 
 
 console.log("--- Ejercicio 14 ---") 
@@ -217,7 +195,19 @@ console.log(asterisco)
   }
 
 
-  console.log("--- Ejercicio 15 ---") 
+console.log("--- Ejercicio 15 ---") 
+
+let asterisco1 = [
+  {asterisco : "   *   *   *   *   *   "},
+  {asterisco : "   *   *   *   *    "},
+  {asterisco : "   *   *   *    "},
+  {asterisco : "   *   *     "},
+  {asterisco : "   *   "}
+]
+
+for (let index = 0; index < asterisco1.length; index++) {
+
+console.log(asterisco1[index].asterisco)
 
 
-
+  }
