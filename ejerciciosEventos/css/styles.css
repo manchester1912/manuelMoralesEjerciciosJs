@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    height: 15vh;
+   
+}
+
+.logo{
+    width: 100px;
+    
+}
+
+#main{
+    min-height: 75vh;
+    background-color: aquamarine;
+}
+
+#contenedorPadre{
+width: 100%;
+    
+}
+
+.imagen img{
+    max-height: 75%;
+    border-radius: 15px;
+    
+}
+
+.imagen{
+    max-height: 75%;
+    border-radius: 15px;
+}
+
+.boton{
+    width: 100%;
+    
+}
+
+
