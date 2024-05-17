@@ -52,3 +52,36 @@
     justify-content: center;
     align-items: center;
 }
+
+/*de aqui prueba de estilos ej 3*/
+
+#derechoInput input{
+    width: 100%;
+    
+}
+
+#derechoTarjetas{
+    height: 70%;
+    border-radius: 15px;
+}
+
+#derechoPadre{
+   
+    height: 70vh;
+    width: 100%;
+}
+
+#izquierdoInput{
+    
+    width: 85%;
+    height: 50%;
+}
+
+#izquierdo{
+   border-radius: 15px;
+}
+
+#izquierdoBoton{
+    
+    height: 30%;
+}

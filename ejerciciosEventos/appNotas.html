@@ -14,14 +14,43 @@
 <body>
     <header id="header" class="p-3 bg-black text-white d-flex justify-content-between align-items-center">
 
-        <a class="d-flex justify-content-start" href="/ejerciciosEventos/index.html"><img class="logo d-flex justify-content-end"
-                src="/ejerciciosEventos/recursos/logo-microsoft-access-256.webp" alt=""></a>
+        <a class="d-flex justify-content-start" href="/ejerciciosEventos/index.html"><img
+                class="logo d-flex justify-content-end" src="/ejerciciosEventos/recursos/logo-microsoft-access-256.webp"
+                alt=""></a>
+
+        <a class="d-flex justify-content-center" href="/ejerciciosEventos/index.html"><button type="button"
+                class="btn btn-success">Ir a Inicio</button></a>
 
         <h1>Tus Aplicativos</h1>
 
     </header>
     <main id="main" class="d-flex align-items-center justify-content-center">
-        notas
+        <div class="row" id="derechoPadre">
+            <div id="izquierdo" class="col-12 col-md-6 bg-warning-subtle text-warning-emphasis d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-column" id="izquierdoInput">
+                    <h2>Nueva Nota</h2>
+                    <input class="mb-2" type="text">
+                    <textarea name="" id="" class="h-50"></textarea>
+                </div>
+                <div id="izquierdoBoton" class="d-flex flex-column justify-content-end">
+                    <button type="button" class="btn btn-success mb-3">Guardar</button>
+                    <button type="button" class="btn btn-danger">Borrar</button>
+                </div>
+            </div>
+            <div id="derecho" class="col-12 col-md-6">
+                <div id="derechoInput" class="mb-2">
+                    <input type="search" class="mt-2">
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Realizadas</label>
+                  </div>
+                <div id="derechoTarjetas" class="bg-success text-white">
+                   
+                </div>
+            </div>
+        </div>
+
 
 
     </main>
