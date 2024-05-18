@@ -15,9 +15,14 @@
 }
 
 #main {
-    min-height: 75vh;
+height: 75vh;
     background-color: aquamarine;
 }
+
+#main2 {
+min-height: 75vh;
+        background-color: aquamarine;
+    }
 
 #contenedorPadre {
     width: 100%;
@@ -55,33 +60,47 @@
 
 /*de aqui prueba de estilos ej 3*/
 
-#derechoInput input{
-    width: 100%;
-    
-}
-
-#derechoTarjetas{
-    height: 70%;
-    border-radius: 15px;
-}
-
-#derechoPadre{
+#tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1vw 0;
    
-    height: 70vh;
-    width: 100%;
-}
-
-#izquierdoInput{
+    border-radius: 15px;
     
-    width: 85%;
-    height: 50%;
 }
 
-#izquierdo{
-   border-radius: 15px;
+#padreNuevo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+ }
+
+#nuevaNota{
+    display: flex;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
 }
 
-#izquierdoBoton{
-    
-    height: 30%;
+#imprimirNota{
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    }
+
+#botones{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#nota{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90%;
+    padding: 2vw;
+    border-radius: 15px;
+  
 }

@@ -18,41 +18,45 @@
                 class="logo d-flex justify-content-end" src="/ejerciciosEventos/recursos/logo-microsoft-access-256.webp"
                 alt=""></a>
 
-        <a class="d-flex justify-content-center" href="/ejerciciosEventos/index.html"><button type="button"
-                class="btn btn-success">Ir a Inicio</button></a>
+        <a class="boton d-flex justify-content-center btn btn-success w-25" href="/ejerciciosEventos/index.html">Ir a
+            Inicio</a>
 
         <h1>Tus Aplicativos</h1>
 
     </header>
-    <main id="main" class="d-flex align-items-center justify-content-center">
-        <div class="row" id="derechoPadre">
-            <div id="izquierdo" class="col-12 col-md-6 bg-warning-subtle text-warning-emphasis d-flex justify-content-between align-items-center">
-                <div class="d-flex flex-column" id="izquierdoInput">
+    <main id="main2">
+        <div id="padreNuevo">
+            <div id="nuevaNota">
+                <div id="nota" class=" my-4 bg-warning-subtle text-warning-emphasis">
                     <h2>Nueva Nota</h2>
-                    <input class="mb-2" type="text">
-                    <textarea name="" id="" class="h-50"></textarea>
+                    <input id="inputNota" class="mb-2" type="text">
+                    <textarea class="h-50" name="descripcion" id="textoNota"></textarea>
                 </div>
-                <div id="izquierdoBoton" class="d-flex flex-column justify-content-end">
-                    <button type="button" class="btn btn-success mb-3">Guardar</button>
+                <div id="botones">
+                    <button id="guardarNota" type="button" class="btn btn-success mb-3" >Guardar</button>
                     <button type="button" class="btn btn-danger">Borrar</button>
                 </div>
             </div>
-            <div id="derecho" class="col-12 col-md-6">
-                <div id="derechoInput" class="mb-2">
-                    <input type="search" class="mt-2">
+            <div id="imprimirNota" class="bg-success text-white">
+                <div>
+                    <input class="m-2 w-50" type="search">
                 </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                    <label class="form-check-label" for="flexSwitchCheckChecked">Realizadas</label>
-                  </div>
-                <div id="derechoTarjetas" class="bg-success text-white">
-                   
+                <div>
+                    <div class="form-check form-switch m-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Realizadas</label>
+                    </div>
+                </div>
+                <div>
+                    <div id="tarjetas">
+
+                    </div>
+
                 </div>
             </div>
         </div>
-
-
-
+        </div>
     </main>
     <footer id="footer" class="p-4 bg-black text-white d-flex justify-content-center align-items-center">
         <h2 class="fs-5">Realizado por Manuel Morales</h2>
