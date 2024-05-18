@@ -44,14 +44,44 @@ let pintarNota = (arregloNotas, divNotas) => {
     }
  }
  
- let agregarNota = (titulo, texto) => {
-    notas.push({
-    id: idGlobal = idGlobal+ 1,
-    titulo:titulo = prompt("titulo"), 
-    texto:texto = prompt("texto)")})
-   
-}
+//  let agregarNota = (titulo, texto) => {
 
-agregarNota()
-console.log(notas);
+//     let click = document.getElementById("guardarNota")
+
+// let nuevaNota = {
+//     id: idGlobal = idGlobal+ 1,
+//     titulo: titulo = prompt("titulo"),
+//     texto: texto = prompt("texto")}
+
+// click.addEventListener("click", (e) => {
+
+//     notas.push(nuevaNota) 
+// })
+    
+//     notas.push(nuevaNota)
+// }
+
+// agregarNota()
+// pintarNota(notas, divTarjetas)
+// console.log(notas);
+
+
+let crearNota2 = (titulo, texto, arregloNota) => {
+    
+    let nuevaNota = {
+        id: idGlobal = idGlobal+ 1,
+        titulo: titulo.value,
+        texto: texto.value}
+     notas.push(arregloNota)   
+    }
+
+let tituloNota = document.getElementById("inputNota")
+let textoNota = document.getElementById("inputNota")
+let click = document.getElementById("guardarNota")
+
+click.addEventListener("click", () => {
+    crearNota2(tituloNota, textoNota, notas)
+  
+})
+
 pintarNota(notas, divTarjetas)
